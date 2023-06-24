@@ -13,15 +13,12 @@
 
 <body>
 
-    <h1>Scheduling Algorithms</h1>
-    <h3>Instructions :</h3>
-    <ol class="instructions">
-        <li>Tiebreaker is Process ID.</li>
-        <li>When burst time is criteria, total burst time is taken into consideration.</li>
-        <li>Context Switch not considered at start and end of processes.</li>
-    </ol>
-    <h3>Preferences :</h3>
+    <h1>Scheduling CPU - Lập Lịch Các Thuật Toán CPU</h1>
+    <h2>Nhóm thực hiện CĐ - Nguyễn Công Đoàn_MSV: 2000707 - Bùi Văn Chiểu_MSV: 2000471</h2>
+    
+
     <ol class="preferences">
+        <div class="head"></div>
         <li>
             Priority : 1 is
             <button id="priority-toggle-btn">
@@ -30,7 +27,7 @@
             </button>
         </li>
         <form id="algorithms-form">
-            <label for="algo"><h3>Algorithms : </h3></label>
+            <label for="algo"><h4>Algorithms : </h4></label>
             <select name="algo" id="algo">
                 <option value="fcfs">First Come First Serve (FCFS)</option>
                 <option value="sjf">Shortest Job First (SJF)</option>
@@ -43,6 +40,7 @@
                 <option value="hrrn">Highest Response Ratio Next (HRRN)</option>
             </select>
         </form>
+    </div>
         <br>
         <table class="main-table">
             <thead>
@@ -83,9 +81,11 @@
         <br>
         <button type="button" id="calculate">Calculate</button>
         <button type="button" id="reset" onClick="window.location.reload();">Reset</button>
-        <div id="output"></div>
+        <div id="output">
+        </div>
+        
+        </ol>   
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
         <script src="script.js"></script>
 
 </body>
